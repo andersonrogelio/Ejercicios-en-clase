@@ -40,7 +40,13 @@ var resultado = document.createElement("p");
 contenedor.appendChild(resultado);
 
 botonSuma.addEventListener("click",function(){
-    resultado.innerHTML = `El resultado es: `+parseInt(input1.value)+parseInt(input2.value);
+    let suma;
+    if (input1.value != "" && input2.value != "") {
+        suma = parseInt(input1.value);
+        suma = suma + parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ suma;
+    }
+    resultado.innerHTML = `Debe completar todos los campos`;
 })
 
 
