@@ -1,44 +1,67 @@
+// Capturo el elemento padre
 var contenedor = document.getElementById("calculadora");
-// contenedor.style.display="flexbox"
-// contenedor.style.flexDirection ="column";
+//creo y agrego un parrafo
+var p1 = document.createElement("p");
+p1.innerHTML = `Ingrese el primer número:`;
+// inserto en el elemento padre 
+contenedor.appendChild(p1);
+
+//creo y agrego un input
 var input1 = document.createElement("input");
 input1.type = "text";
 input1.id = "numero1";
+// inserto en el elemento padre 
 contenedor.appendChild(input1);
-// contenedor.appendChild.innerHTML="<br></br>";
 
+//creo y agrego un parrafo
+var p2 = document.createElement("p");
+p2.innerHTML = `Ingrese el segundo número:`;
+// inserto en el elemento padre 
+contenedor.appendChild(p2);
+//creo y agrego un input
 var input2 = document.createElement("input");
 input2.type = "text";
 input2.id = "numero2";
+// inserto en el elemento padre 
 contenedor.appendChild(input2);
 
+//creo y agrego un boton
 var botonSuma = document.createElement("button");
 botonSuma.value = "Calcular";
 botonSuma.id = "numero2";
 botonSuma.innerHTML = "+";
+// inserto en el elemento padre 
 contenedor.appendChild(botonSuma);
 
+//creo y agrego un boton
 var botonResta = document.createElement("button");
 botonResta.value = "Calcular";
 botonResta.id = "numero2";
 botonResta.innerHTML = "-";
+// inserto en el elemento padre 
 contenedor.appendChild(botonResta);
 
+//creo y agrego un boton
 var botonMultiplicacion = document.createElement("button");
 botonMultiplicacion.value = "Calcular";
 botonMultiplicacion.id = "numero2";
 botonMultiplicacion.innerHTML = "x";
+// inserto en el elemento padre 
 contenedor.appendChild(botonMultiplicacion);
 
+//creo y agrego un boton
 var botonDivision = document.createElement("button");
 botonDivision.value = "Calcular";
 botonDivision.id = "numero2";
 botonDivision.innerHTML = "/";
+// inserto en el elemento padre 
 contenedor.appendChild(botonDivision);
 
+//creo y agrego un parrafo
 var resultado = document.createElement("p");
+// inserto en el elemento padre 
 contenedor.appendChild(resultado);
-
+// Creo los eventos de click de cada boton que en funcion de si los campos tienen un dato ingresado nos realizara la operacion 
 botonSuma.addEventListener("click",function(){
     let suma;
     if (input1.value != "" && input2.value != "") {
