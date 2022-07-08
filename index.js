@@ -45,24 +45,43 @@ botonSuma.addEventListener("click",function(){
         suma = parseInt(input1.value);
         suma = suma + parseInt(input2.value);
         resultado.innerHTML = `El resultado es: `+ suma;
+    }else{
+        resultado.innerHTML = `Debe completar todos los campos`;
+
+    }
+});
+
+botonResta.addEventListener("click",function(){
+    let resta;
+    if (input1.value != "" && input2.value != "") {
+        resta = parseInt(input1.value);
+        resta = resta - parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ resta;
+    }else{
+        resultado.innerHTML = `Debe completar todos los campos`;
+
+    }
+});
+botonSuma.addEventListener("click",function(){
+    let suma;
+    if (input1.value != "" && input2.value != "") {
+        suma = parseInt(input1.value);
+        suma = suma + parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ suma;
     }
     resultado.innerHTML = `Debe completar todos los campos`;
-})
+});
+botonSuma.addEventListener("click",function(){
+    let suma;
+    if (input1.value != "" && input2.value != "") {
+        suma = parseInt(input1.value);
+        suma = suma + parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ suma;
+    }
+    resultado.innerHTML = `Debe completar todos los campos`;
+});
 
-
-// contenedor.innerHTML = `<form name="calc">
-// <input type="Text" name="operando1" value="0" size="12">
-// <br>
-// <input type="Text" name="operando2" value="0" size="12">
-// <br>
-// <input type="Button" name="" value=" + " onclick="calcula('+')">
-// <input type="Button" name="" value=" - " onclick="calcula('-')">
-// <input type="Button" name="" value=" X " onclick="calcula('*')">
-// <input type="Button" name="" value=" / " onclick="calcula('/')">
-// <br>
-// <input type="Text" name="resultado" value="0" size="12">`;
 
 // document.addEventListener("load",function(e){
 //     e = document.body.appendChild(input1);
-
 // });
