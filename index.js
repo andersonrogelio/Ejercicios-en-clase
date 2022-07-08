@@ -45,9 +45,11 @@ botonSuma.addEventListener("click",function(){
         suma = parseInt(input1.value);
         suma = suma + parseInt(input2.value);
         resultado.innerHTML = `El resultado es: `+ suma;
+        input1.value = "";
+        input2.value = "";
     }else{
         resultado.innerHTML = `Debe completar todos los campos`;
-
+        
     }
 });
 
@@ -57,9 +59,11 @@ botonResta.addEventListener("click",function(){
         resta = parseInt(input1.value);
         resta = resta - parseInt(input2.value);
         resultado.innerHTML = `El resultado es: `+ resta;
+        input1.value = "";
+        input2.value = "";
     }else{
         resultado.innerHTML = `Debe completar todos los campos`;
-
+        
     }
 });
 
@@ -69,9 +73,11 @@ botonMultiplicacion.addEventListener("click",function(){
         multiplicacion = parseInt(input1.value);
         multiplicacion = multiplicacion * parseInt(input2.value);
         resultado.innerHTML = `El resultado es: `+ multiplicacion;
+        input1.value = "";
+        input2.value = "";
     }else{
         resultado.innerHTML = `Debe completar todos los campos`;
-
+        
     }
 });
 
@@ -81,6 +87,8 @@ botonDivision.addEventListener("click",function(){
         division = parseInt(input1.value);
         division = division / parseInt(input2.value);
         resultado.innerHTML = `El resultado es: `+ division;
+        input1.value = "";
+        input2.value = "";
     }else{
         resultado.innerHTML = `Debe completar todos los campos`;
 
