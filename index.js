@@ -25,6 +25,11 @@ input2.id = "numero2";
 // inserto en el elemento padre 
 contenedor.appendChild(input2);
 
+// Creo un salto de linea
+var salto = document.createElement("br");
+// inserto en el elemento padre 
+contenedor.appendChild(salto);
+
 //creo y agrego un boton
 var botonSuma = document.createElement("button");
 botonSuma.value = "Calcular";
@@ -56,6 +61,11 @@ botonDivision.id = "numero2";
 botonDivision.innerHTML = "/";
 // inserto en el elemento padre 
 contenedor.appendChild(botonDivision);
+
+// Creo un salto de linea
+var salto = document.createElement("br");
+// inserto en el elemento padre 
+contenedor.appendChild(salto);
 
 //creo y agrego un parrafo
 var resultado = document.createElement("p");
