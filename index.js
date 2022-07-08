@@ -62,24 +62,31 @@ botonResta.addEventListener("click",function(){
 
     }
 });
-botonSuma.addEventListener("click",function(){
-    let suma;
+
+botonMultiplicacion.addEventListener("click",function(){
+    let multiplicacion;
     if (input1.value != "" && input2.value != "") {
-        suma = parseInt(input1.value);
-        suma = suma + parseInt(input2.value);
-        resultado.innerHTML = `El resultado es: `+ suma;
+        multiplicacion = parseInt(input1.value);
+        multiplicacion = multiplicacion * parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ multiplicacion;
+    }else{
+        resultado.innerHTML = `Debe completar todos los campos`;
+
     }
-    resultado.innerHTML = `Debe completar todos los campos`;
 });
-botonSuma.addEventListener("click",function(){
-    let suma;
+
+botonDivision.addEventListener("click",function(){
+    let division;
     if (input1.value != "" && input2.value != "") {
-        suma = parseInt(input1.value);
-        suma = suma + parseInt(input2.value);
-        resultado.innerHTML = `El resultado es: `+ suma;
+        division = parseInt(input1.value);
+        division = division / parseInt(input2.value);
+        resultado.innerHTML = `El resultado es: `+ division;
+    }else{
+        resultado.innerHTML = `Debe completar todos los campos`;
+
     }
-    resultado.innerHTML = `Debe completar todos los campos`;
 });
+
 
 
 // document.addEventListener("load",function(e){
